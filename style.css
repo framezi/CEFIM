@@ -1,0 +1,258 @@
+/* Polices */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ************ */
+
+body
+{
+	background: url("image/Background.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+#bloc_page
+{
+    width: 1000px;
+    margin: auto;
+}
+
+/* Header */
+
+header
+{
+    background: url('image/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 59px;
+    height: 60px;
+    border: 1px solid black;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 3.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+    color: black;
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+    color: #760001;
+}
+
+/* Navigation */
+
+div ul
+{
+    margin-bottom: 20px;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+/* ************ */
+
+#photo
+{
+    text-align: center;
+    border: 1px solid black;
+}
+
+.presentation, ul
+{
+	color: black;
+}
+
+#conteneur1
+{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2
+{
+    color : #760001;
+    margin-left: 10px;
+}
+
+h3
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+    color: #760001;
+}
+
+.element2:nth-child(1)
+{
+    width: 650px;
+    margin-left: 50px;
+    border: 3px solid white;
+}
+
+.element2:nth-child(2)
+{
+    width: 650px;
+	margin-left: 50px;
+    margin-top: 20px;
+    border: 3px solid white;    
+}
+
+aside
+{
+    flex: 0.8;
+    position: relative;
+    left: 30px;
+    background-color: #706b64;
+    box-shadow: 6px 6px 10px black;
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    background:  url('image/separateur.png') repeat-x top;
+    padding-top: 25px;
+    padding-left: 100px;
+}
+
+footer p, footer ul
+{
+    font-size: 1em;
+}
+
+footer h1
+{
+    font-size: 1.3em;
+    color: #760001;
+}
+
+#mes_photos
+{
+    width: 35%;
+}
+
+#photo1, #photo2, #photo3, #photo4
+{
+    width: 70px;
+    height: 70px;
+}
+
+#interets
+{
+    width: 31%;
+    padding-left: 100px;
+}
+
+#mes_photos img
+{
+    border: 1px solid #181818;
+    margin-right: 2px;
+}
+
+#liste_interets
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -18px;
+}
+
+#interets ul
+{
+    list-style-image: url('image/ico_liensexterne.png');
+    padding-left: 22px;
+    color: black;
+}
+
+#interets a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#linkedin, #insta, #facebook, #twitter
+{
+    width: 30px;
+    height: 30px;
+    padding-left: 1px;
+}
+
+#reseau
+{
+    padding-left: 30px;
+}
